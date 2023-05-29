@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #FFFFFF;
+    background-color: black;
+}
+/* I - HEADER*/
+.head-container {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, black),
+    url('./images/Bathome1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130%;
+    position: relative;
+    padding-top: 50px;
+}
+/* I - 1. Navbar */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 60px;
+    /*border-bottom: 1px solid #c4c4c4;*/
+    margin-bottom: 150px;
+}
+.navbar-left{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.navbar-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.navbar__active,
+.navbar-button__element:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* I - 2. The side icon (fb, insta, twitter) */
+.side-left {
+    position: absolute;
+    writing-mode: vertical-lr;
+    right: 0;
+    top: 0;
+    margin: 10% 20px 0 0;
+}
+.side__image {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* I - 3. Content header (The introdaction) */ 
+.head-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    margin: 0 auto;
+}
+.content-button__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.content-button__left,
+.content-button__right {
+    outline: none;
+    border: 0;
+    justify-content: center;
+    background: linear-gradient(to right,#eddebf3f 10%, #890009cd 90%, #890009e2);
+    color: #FFFFFF;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+}
+
+.header-button__down {
+    text-align: center;
+}
