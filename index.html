@@ -196,7 +196,75 @@
             </section>
             <img src="./icons/icon_flèche_2.png"/>
         </section>
-        <img class="multimedia__trailer" src="./images/Bathome_ba2.png"/>
+        <video class="multimedia__trailer" controls poster="./images/Bathome_ba2.png">
+            <source src="./trailer/Batman-begins.mp4" type="video/mp4"/>
+        </video>
     </main>
+    <!-- CONTACT -->
+    <main class="body-contact__container">
+        <h3>PRENONS CONTACT</h3>
+        <form class="contact-form__container">
+            <label for="input-email" class="label-email">ADRESSE EMAIL</label>
+            <input type="email" placeholder="Adresse email" id="input-email"/>
+            <label for="input-newsletter" class="label-newsletter">NEWSLETTER</label>
+            <div class="contact__accept">
+                <span>
+                    En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
+                    Batman :
+                </span>
+                <input type="checkbox" />
+            </div>
+            <select aria-placeholder="Choisir" placeholder="hello" id="input-channel">
+                <option>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                <option>Une fois par semaine</option>
+                <option>Une fois toute les 2 semaines (2 fois par mois)</option>
+                <option>Une fois par mois</option>
+                <option>Une fois tous les trois mois</option>
+                <option>Une fois tous les six mois</option>
+            </select>
+            <input type="text" placeholder="Souhaitez-vous recevoir des news" id="input-newsletter"/>
+            <div class="recommended-button">
+                <button class="recommended-button__item">Des films</button>
+                <button class="recommended-button__item">Des comics</button>
+                <button class="recommended-button__item">De tout</button>
+            </div>
+            <label for="input-commentary" class="label-commentary">MESSAGE</label>
+            <input type="text" placeholder="Laisser un commentaire pour la communauté" id="input-commentary"/>
+            <button type="submit" class="contact-button__submit">CONFIRMER</button>
+        </form>
+    </main>
+    <!-- REPLIC -->
+    <main class="body-replic__container">
+        <div class="replic__element">
+            <img src="./icons/icon_guillemets_1.png" class="replic-quot__open"/>
+            <div class="replic__text">
+                <h4>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</h4>
+                <span>The Dark Knight : Le Chevalier Noir -</span>
+                <span>Le Joker à Batman (2008)</span>
+            </div>
+           
+            <img src="./icons/icon_guillemets_2.png" class="replic-quot__close"/>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-element">
+            <div class="footer__copyright">
+                <img src="./icons/icon_WB.png" />
+                <span>
+                    Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+                    Snyder & Reeves
+                </span>
+            </div>
+            <div class="footer__image">
+                <img src="./icons/logo_sayna_white.png" />
+                <img src="./icons/icon_x.png"/>
+                <img src="./icons/icon_DC.png"/>
+                <img src="./icons/icon_facebook.png"/>
+                <img src="./icons/icon_ig.png"/>
+                <img src="./icons/icon_tw.png"/>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

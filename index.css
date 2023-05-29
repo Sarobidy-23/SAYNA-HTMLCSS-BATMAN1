@@ -164,3 +164,107 @@ body {
     padding: 5% 11% 0 11%;
     width: 78%;
 }
+/* Contact */
+.body-contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient( to top left, #051c2ade,#eddebf88 200%);
+}
+.contact-form__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#input-email,
+#input-channel,
+#input-newsletter,
+#input-commentary {
+    outline: none;
+    border: 0;
+    border-bottom: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    background: none;
+}
+.label-email,
+.label-newsletter,
+.label-commentary {
+    margin-top: 3%;
+}
+#input-email,
+#input-channel,
+#input-newsletter,
+#input-commentary {
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+.recommended-button {
+    display: flex;
+    justify-content: space-around;
+}
+.recommended-button__item,
+.contact-button__submit {
+    outline: none;
+    border-image: linear-gradient(to left, #19587D, #f8f184) 1;
+    cursor: pointer;
+    background: none;
+    color: #FFFFFF;
+    padding: 10px 25px 10px 25px;
+}
+.contact-button__submit {
+    margin: 8% 0 10% 0;
+    width: 50%;
+    align-self: center;
+    border: 0;
+    background: linear-gradient(to right,#eddebf3f 10%, #890009cd 90%, #890009e2);
+}
+/* Replic */
+.body-replic__container {
+    margin: 8% 0 8% 0;
+    width: 100%;
+}
+.replic__element {
+    padding: 0 11% 0 11%;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+.replic-quot__close {
+    width: 10%;
+    align-self: flex-end;
+}
+.replic-quot__open {
+    width: 10%;
+}
+.replic__text {
+    align-self: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    padding: 0 11% 0 11%;
+}
+.footer-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__image {
+    margin: 5% 0 10% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
