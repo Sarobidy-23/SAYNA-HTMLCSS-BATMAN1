@@ -83,3 +83,55 @@ body {
 .header-button__down {
     text-align: center;
 }
+
+/* II - Cinema & Nemesis & friend*/
+.body-cinema__container,
+.body-nemesis__container,
+.body-friend__container{
+    margin-top: 8%;
+    width: 100%;
+}
+.cinema__presentation,
+.nemesis__presentation,
+.friend__presentation,
+.multimedia__presentation {
+    padding: 0 11% 0 11%;
+    width: 72%;
+    position: relative;
+}
+.cinema__actor-container,
+.nemesis__actor-container,
+.friend__actor-container,
+.multimedia-item__container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11% 0 11%;
+}
+.actor__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nemesis-title__container {
+    position: relative;
+}
+.nemesis-title__image {
+    width: 10%;
+    margin: 0 0 0 -4%;
+}
+
+/* BREAK */
+.batman-image__break {
+    position: relative;
+    width: 100%;
+    height: 2%;
+}
+.image__break__element {
+    position: absolute;
+    right: 0;
+    top: -500%;
+    width: 24%;
+}
