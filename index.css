@@ -87,13 +87,15 @@ body {
 /* II - Cinema & Nemesis & friend*/
 .body-cinema__container,
 .body-nemesis__container,
-.body-friend__container{
+.body-friend__container,
+.body-justice-league__container{
     margin-top: 8%;
     width: 100%;
 }
 .cinema__presentation,
 .nemesis__presentation,
 .friend__presentation,
+.justice-league__presentation,
 .multimedia__presentation {
     padding: 0 11% 0 11%;
     width: 72%;
@@ -134,4 +136,31 @@ body {
     right: 0;
     top: -500%;
     width: 24%;
+}
+.justice-league__image {
+    width: 100%;
+}
+
+/* MULTIMEDIA */
+.body-multimedia__container {
+    margin-top: 0;
+}
+.multimedia-item__card {
+    display: flex;
+    position: relative;
+    width: 80%;
+    background: linear-gradient( to top left, #051c2ade,#eddebf88 200%);
+    border-radius: 20px;
+
+}
+.multimedia-card__description {
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.multimedia-card__image {
+    width: 100%;
+}
+.multimedia__trailer {
+    padding: 5% 11% 0 11%;
+    width: 78%;
 }
