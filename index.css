@@ -1,3 +1,38 @@
+@font-face {
+    font-family: Rajdhani;
+    src: url("./font/Rajdhani-Medium.ttf");
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url("./font/SpaceGrotesk-Regular.ttf");
+}
+
+h1 {
+    font-family: Rajdhani;
+    font-size: 36px;
+}
+button {
+    font-family: Rajdhani;
+    font-size: 20px;
+}
+h2 {
+    font-family: Grotesk;
+    font-weight: bold;
+    font-size: 12px;
+}
+.subtitle {
+    font-family: Grotesk;
+    font-size: 22px;
+}
+.text-gm,
+.text-pm {
+    font-family: Grotesk;
+    font-size: 18px;
+}
+.text-pm {
+    font-size: 12px !important;
+}
 body {
     margin: 0;
     padding: 0;
@@ -61,7 +96,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 32%;
+    text-align: center;
+    width: 36%;
     margin: 0 auto;
 }
 .content-button__container {
@@ -74,7 +110,7 @@ body {
     outline: none;
     border: 0;
     justify-content: center;
-    background: linear-gradient(to right,#eddebf3f 10%, #890009cd 90%, #890009e2);
+    background: linear-gradient(to right,#eddebf6f 10%, #890009e2);
     color: #FFFFFF;
     padding: 10px 25px 10px 25px;
     cursor: pointer;
@@ -148,17 +184,25 @@ body {
 .multimedia-item__card {
     display: flex;
     position: relative;
-    width: 80%;
+    width: 70%;
     background: linear-gradient( to top left, #051c2ade,#eddebf88 200%);
     border-radius: 20px;
-
 }
 .multimedia-card__description {
     box-sizing: border-box;
-    padding-left: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.movie__note {
+    margin-bottom: 7px;
+}
+.movie__note span {
+    color: #FFFF00;
+    padding-bottom: 7px;
 }
 .multimedia-card__image {
-    width: 100%;
+    width: 180%;
 }
 .multimedia__trailer {
     padding: 5% 11% 0 11%;
