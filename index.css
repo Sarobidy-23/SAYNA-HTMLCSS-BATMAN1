@@ -54,23 +54,28 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 130%;
+    height: min(60vw,820px);
+    min-height: 300px;
     position: relative;
-    padding-top: 50px;
+    padding-top: min(3vw,50px);
 }
 /* I - 1. Navbar */
 .navbar-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 60px;
+    padding-bottom: min(5vw,60px);
     /*border-bottom: 1px solid #c4c4c4;*/
-    margin-bottom: 150px;
+    margin-bottom: min(5vw,150px);
 }
 .navbar-left{
     flex-grow: 1;
     display: flex;
     justify-content: center;
+}
+.logohome{
+    width: min(10vw,150px);
+    min-width: 70px;
 }
 .navbar-right {
     flex-grow: 1;
@@ -89,25 +94,32 @@ body {
     writing-mode: vertical-lr;
     right: 0;
     top: 0;
-    margin: 10% 20px 0 0;
+    margin: min(25vw,150px) 2% 0 0;
 }
 .side__image {
-    margin-top: 20px;
+    margin-top: min(2vw,20px);
     cursor: pointer;
+    width: min(2vw,30px);
+    min-width: 15px;
+}
+.side-arrow{
+    width: min(7vw,100px);
+    min-width: 40px;
 }
 
-/* I - 3. Content header (The introdaction) */ 
+/* I - 3. Content header (The introduction) */ 
 .head-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 36%;
+    width: min(60vw,500px);
     margin: 0 auto;
 }
 .content-button__container {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .content-button__left,
@@ -126,8 +138,22 @@ body {
     background: linear-gradient(to right,#eddebfea 10%, #890009) ;
 }
 
+@media (max-width: 480px) {
+    .content-button__container{
+        flex-direction: column;
+    }
+    .content-button__left,
+    .content-button__right {
+        margin-top: 5px;
+    }
+}
+
 .header-button__down {
     text-align: center;
+}
+.button-down__element{
+    width: min(8vw,100px);
+    min-width: 40px;
 }
 
 /* II - Cinema & Nemesis & friend*/
