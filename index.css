@@ -175,8 +175,7 @@ body {
 }
 .cinema__actor-container,
 .nemesis__actor-container,
-.friend__actor-container,
-.multimedia-item__container {
+.friend__actor-container {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -191,8 +190,7 @@ body {
 @media (max-width: 461px){
     .cinema__actor-container,
     .nemesis__actor-container,
-    .friend__actor-container,
-    .multimedia-item__container {
+    .friend__actor-container{
         flex-wrap: wrap;
     }
 }
@@ -229,10 +227,19 @@ body {
 .body-multimedia__container {
     margin-top: 0;
 }
+.multimedia-item__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 min(5vw, 40px) 0 min(5vw, 40px);
+}
+
 .multimedia-item__card {
     display: flex;
     position: relative;
-    width: 70%;
+    margin: 5px;
+    width: min(100vw,960px);
     background: linear-gradient( to top left, #051c2ade,#eddebf88 200%);
     border-radius: 20px;
 }
@@ -250,7 +257,13 @@ body {
     padding-bottom: 7px;
 }
 .multimedia-card__image {
-    width: 180%;
+    width: min(180%,1500px);
+    min-width: 100px;
+}
+@media (max-width: 471px) {
+    .multimedia-card__image {
+        display: none;
+    }
 }
 .multimedia__trailer {
     padding: 5% 11% 0 11%;
