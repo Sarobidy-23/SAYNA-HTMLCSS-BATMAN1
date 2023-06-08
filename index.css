@@ -10,28 +10,28 @@
 
 h1 {
     font-family: Rajdhani;
-    font-size: 36px;
+    font-size: clamp(16px,2vw,36px);
 }
 button {
     font-family: Rajdhani;
-    font-size: 20px;
+    font-size: clamp(10px, 2vw,20px);
 }
 h2 {
     font-family: Grotesk;
     font-weight: bold;
-    font-size: 12px;
+    font-size: clamp(8px, 1.5vw,12px);
 }
 .subtitle {
     font-family: Grotesk;
-    font-size: 22px;
+    font-size: clamp(14px, 1.8vw,22px);
 }
 .text-gm,
 .text-pm {
     font-family: Grotesk;
-    font-size: 18px;
+    font-size: clamp(10px, 2vw,18px);
 }
 .text-pm {
-    font-size: 12px !important;
+    font-size:  clamp(8px, 1.5vw,12px) !important;
 }
 body {
     margin: 0;
@@ -40,6 +40,11 @@ body {
     height: 100vh;
     color: #FFFFFF;
     background-color: black;
+    position: relative;
+}
+.main-body {
+    display: flex;
+    flex-direction: column;
 }
 /* I - HEADER*/
 .head-container {
@@ -114,6 +119,11 @@ body {
     color: #FFFFFF;
     padding: 10px 25px 10px 25px;
     cursor: pointer;
+}
+.content-button__left:hover,
+.content-button__right:hover,
+.contact-button__submit:hover {
+    background: linear-gradient(to right,#eddebfea 10%, #890009) ;
 }
 
 .header-button__down {
@@ -311,4 +321,11 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 50%;
+}
+.image-scale__hover:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+.image-scale__hover {
+    transition: all 0.5s ease-in-out;
 }
