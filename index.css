@@ -10,28 +10,28 @@
 
 h1 {
     font-family: Rajdhani;
-    font-size: clamp(16px,2vw,36px);
+    font-size: clamp(18px,2vw,36px);
 }
 button {
     font-family: Rajdhani;
-    font-size: clamp(10px, 2vw,20px);
+    font-size: clamp(12px, 2vw,20px);
 }
 h2 {
     font-family: Grotesk;
     font-weight: bold;
-    font-size: clamp(8px, 1.5vw,12px);
+    font-size: clamp(10px, 1.5vw,12px);
 }
 .subtitle {
     font-family: Grotesk;
-    font-size: clamp(10px, 1.8vw,22px);
+    font-size: clamp(12px, 1.8vw,22px);
 }
 .text-gm,
 .text-pm {
     font-family: Grotesk;
-    font-size: clamp(10px, 2vw,18px);
+    font-size: clamp(12px, 2vw,18px);
 }
 .text-pm {
-    font-size:  clamp(8px, 1.5vw,12px) !important;
+    font-size:  clamp(10px, 1.5vw,12px) !important;
 }
 body {
     margin: 0;
@@ -180,7 +180,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 11% 0 11%;
 }
 .illustration__image{
