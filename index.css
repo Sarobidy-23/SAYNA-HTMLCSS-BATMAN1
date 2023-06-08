@@ -275,6 +275,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
     width: 100%;
     background: linear-gradient( to top left, #051c2ade,#eddebf88 200%);
 }
@@ -303,12 +305,23 @@ body {
 #input-channel,
 #input-newsletter,
 #input-commentary {
+    width: 100%;
     margin-bottom: 1%;
     margin-top: 2%;
 }
 .recommended-button {
     display: flex;
     justify-content: space-around;
+}
+@media (max-width: 310px) {
+    .recommended-button {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recommended-button__item{
+        margin: 2px;
+        width: 70%;
+    }
 }
 .recommended-button__item,
 .contact-button__submit {
