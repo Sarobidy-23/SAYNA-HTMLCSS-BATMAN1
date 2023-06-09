@@ -107,7 +107,7 @@ body {
     writing-mode: vertical-lr;
     right: 0;
     top: 0;
-    margin: min(25vw,150px) 2% 0 0;
+    margin: 25vh 2% 0 0;
 }
 .side__image {
     margin-top: min(2vw,20px);
