@@ -1,3 +1,11 @@
+*, html {
+    scroll-behavior: smooth !important;
+    transition: all 0.5s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
 @font-face {
     font-family: Rajdhani;
     src: url("./font/Rajdhani-Medium.ttf");
@@ -11,24 +19,29 @@
 h1 {
     font-family: Rajdhani;
     font-size: clamp(18px,2vw,36px);
+    animation: slidein 1s ease-in;
 }
 button {
     font-family: Rajdhani;
     font-size: clamp(12px, 2vw,20px);
+    animation: slidein 1s ease-in;
 }
 h2 {
     font-family: Grotesk;
     font-weight: bold;
     font-size: clamp(10px, 1.5vw,12px);
+    animation: slidein 1s ease-in;
 }
 .subtitle {
     font-family: Grotesk;
     font-size: clamp(12px, 1.8vw,22px);
+    animation: slidein 1s ease-in;
 }
 .text-gm,
 .text-pm {
     font-family: Grotesk;
     font-size: clamp(12px, 2vw,18px);
+    animation: slidein 1s ease-in;
 }
 .text-pm {
     font-size:  clamp(10px, 1.5vw,12px) !important;
@@ -65,7 +78,6 @@ body {
     flex-direction: row;
     align-items: center;
     padding-bottom: min(5vw,60px);
-    /*border-bottom: 1px solid #c4c4c4;*/
     margin-bottom: min(5vw,150px);
 }
 .navbar-left{
@@ -89,8 +101,9 @@ body {
 }
 
 /* I - 2. The side icon (fb, insta, twitter) */
-.side-left {
-    position: absolute;
+.side-right {
+    position: fixed;
+    z-index: 2;
     writing-mode: vertical-lr;
     right: 0;
     top: 0;
@@ -157,25 +170,16 @@ body {
 }
 
 /* II - Cinema & Nemesis & friend*/
-.body-cinema__container,
-.body-nemesis__container,
-.body-friend__container,
-.body-justice-league__container{
+.body-container{
     margin-top: 8%;
     width: 100%;
 }
-.cinema__presentation,
-.nemesis__presentation,
-.friend__presentation,
-.justice-league__presentation,
-.multimedia__presentation {
+.title-presentation {
     padding: 0 11% 0 11%;
     width: 72%;
     position: relative;
 }
-.cinema__actor-container,
-.nemesis__actor-container,
-.friend__actor-container {
+.actor-presentation {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -188,9 +192,7 @@ body {
     min-width: 90px;
 }
 @media (max-width: 461px){
-    .cinema__actor-container,
-    .nemesis__actor-container,
-    .friend__actor-container{
+    .actor-presentation{
         flex-wrap: wrap;
     }
 }
@@ -395,10 +397,20 @@ footer {
 /* animation */
 .image-scale__hover:hover {
     transform: scale(1.05);
-    transition: all 0.5s ease-in-out;
 }
 .image-scale__hover {
-    transition: all 0.5s ease-in-out;
     width: min(30vw,500px);
     min-width: 100px;
 }
+@keyframes slidein {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

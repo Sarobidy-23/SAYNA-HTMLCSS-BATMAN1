@@ -9,7 +9,8 @@
 </head>
 <body>
     <!-- HEADER -->
-    <div class="head-container">
+    <div class="head-container" id="header">
+        <!--navbar-->
         <nav class="navbar-container">
             <div class="navbar-left">
                 <img alt="image non disponible" class="logohome" src="./icons/logohome.png">
@@ -18,13 +19,21 @@
                 <a class="navbar-button__element navbar__active subtitle">HOME</a>
             </div>
         </nav>
-        <aside class="side-left">
-            <img alt="image non disponible" class="side__image side-arrow" src="./icons/logo_bat_flèche.png">
+        <!--navbar-->
+        <!--left icon-->
+        <aside class="side-right">
+            <a href="#header">
+                <img alt="image non disponible" class="side__image side-arrow" src="./icons/logo_bat_flèche.png">
+            </a>
             <img alt="image non disponible" class="side__image" src="./icons/icon_facebook.png">
             <img alt="image non disponible" class="side__image" src="./icons/icon_ig.png">
             <img alt="image non disponible" class="side__image" src="./icons/icon_tw.png">
-            <img alt="image non disponible" class="side__image side-arrow" src="./icons/logo_bat_flèche_2.png">
+            <a href="#contact">
+                <img alt="image non disponible" class="side__image side-arrow" src="./icons/logo_bat_flèche_2.png">
+            </a>
         </aside>
+        <!--left icon-->
+        <!--header content intronduction-->
         <div class="head-content">
             <span class="text-gm">
                 Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternele contre les criminels de Gotham City.
@@ -32,17 +41,23 @@
             </span>
             <h1>Il est Batman</h1>
             <div class="content-button__container">
-                <button class="content-button__left">VOIR LE HÉROS</button>
-                <button class="content-button__right">LES ADVERSAIRES</button>
+                <button class="content-button__left">
+                    <a href="#cinema">VOIR LE HÉROS</a>
+                </button>
+                <button class="content-button__right">
+                    <a href="#nemesis">LES ADVERSAIRES</a>
+                </button>
             </div>
         </div>
+         <!--header content intronduction-->
     </div>
+    <!-- HEADER -->
     <div class="header-button__down">
         <img alt="image non disponible" class="button-down__element" src="./icons/flèche_down_header.png">
     </div>
     <!-- CINEMA -->
-    <div class="body-cinema__container">
-        <div class="cinema__presentation">
+    <div class="body-container" id="cinema">
+        <div class="title-presentation">
             <h1>BATMAN AU CINÉMA</h1>
             <p class="text-gm">
                 Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le
@@ -53,7 +68,8 @@
                 acteurs d’interpréter l’homme chauve-souris. Voici les trois derniers :
             </p>
         </div>
-        <div class="cinema__actor-container">
+        <!--Actor presentation-->
+        <div class="actor-presentation">
             <div class="image-scale__hover">
                 <img alt="image non disponible" src="./images/Bathome2.png" class="illustration__image">
                 <div class="actor__information subtitle">
@@ -76,10 +92,12 @@
                 </div>
             </div>
         </div>
+        <!--Actor presentation-->
     </div>
+    <!-- CINEMA -->
     <!-- NEMESIS -->
-    <div class="body-nemesis__container">
-        <div class="nemesis__presentation">
+    <div class="body-container" id="nemesis">
+        <div class="title-presentation">
             <h1 class="nemesis-title__container">
                 NÉMÉSIS 
                 <img alt="image non disponible" class="nemesis-title__image" src="./images/Bathome13.png">
@@ -92,7 +110,8 @@
                 ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
             </p>
         </div>
-        <div class="nemesis__actor-container">
+        <!--Actor presentation-->
+        <div class="actor-presentation">
             <div class="image-scale__hover">
                 <img alt="image non disponible" src="./images/Bathome5.png" class="illustration__image">
                 <div class="actor__information subtitle">
@@ -115,13 +134,15 @@
                 </div>
             </div>
         </div>
+        <!--Actor presentation-->
     </div>
+    <!-- NEMESIS -->
     <!-- FRIEND -->
     <div class="batman-image__break">
         <img alt="image non disponible" class="image__break__element" src="./images/Bathome12.png">
     </div>
-    <div class="body-friend__container">
-        <div class="friend__presentation">
+    <div class="body-container">
+        <div class="title-presentation">
             <h1>ALLIÉS</h1>
             <p class="text-gm">
                 Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce
@@ -132,7 +153,8 @@
                 nettoyer sa ville de la criminalité qui y règne.
             </p>
         </div>
-        <div class="friend__actor-container">
+        <!--Actor presentation-->
+        <div class="actor-presentation">
             <div class="image-scale__hover">
                 <img alt="image non disponible" src="./images/Bathome9.png" class="illustration__image">
                 <div class="actor__information subtitle">
@@ -155,10 +177,12 @@
                 </div>
             </div>
         </div>
+        <!--Actor presentation-->
     </div>
+    <!-- FRIEND -->
     <!-- JUSTICE LEAGUE -->
-    <div class="body-justice-league__container">
-        <div class="justice-league__presentation">
+    <div class="body-container">
+        <div class="title-presentation">
             <h1>JUSTICE LEAGUE</h1>
             <p class="text-gm">
                 Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils
@@ -170,9 +194,10 @@
         </div>
         <img alt="image non disponible" class="justice-league__image" src="./images/Bathome11.png">
     </div>
+    <!-- JUSTICE LEAGUE -->
     <!-- MULTIMÉDIA -->
     <div class="body-multimedia__container">
-        <div class="multimedia__presentation">
+        <div class="title__presentation">
             <h1>MULTIMÉDIA</h1>
         </div>
         <div class="multimedia-item__container">
@@ -198,8 +223,9 @@
             <source src="./trailer/Batman-begins.mp4" type="video/mp4">
         </video>
     </div>
+    <!-- MULTIMÉDIA -->
     <!-- CONTACT -->
-    <div class="body-contact__container">
+    <div class="body-contact__container" id="contact">
         <h1>PRENONS CONTACT</h1>
         <form class="contact-form__container">
             <label for="input-email" class="label-email text-gm">ADRESSE EMAIL</label>
@@ -231,6 +257,7 @@
             <button type="submit" class="contact-button__submit">CONFIRMER</button>
         </form>
     </div>
+    <!-- CONTACT -->
     <!-- REPLIC -->
     <div class="body-replic__container">
         <div class="replic__element">
@@ -244,6 +271,7 @@
             <img alt="image non disponible" src="./icons/icon_guillemets_2.png" class="replic-quot__close">
         </div>
     </div>
+    <!-- REPLIC -->
     <!-- FOOTER -->
     <footer>
         <div class="footer-element">
