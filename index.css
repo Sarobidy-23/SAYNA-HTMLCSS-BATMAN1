@@ -64,7 +64,7 @@ body {
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, black),
     url('./images/Bathome1.png');
-    background-size: contain;
+    background-size:  100vw auto;
     background-repeat: no-repeat;
     width: 100%;
     height: min(60vw,820px);
